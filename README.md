@@ -1,0 +1,2 @@
+# chogo
+personal accounting script
