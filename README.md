@@ -26,13 +26,13 @@ personal accounting script
 ###	./conf/liabilities
 負債の項目
 
-### ./<月の名前>
+## ./<月の名前>
 各月毎の記録用ディレクトリ
-## ./<月の名前>/income_budget
+### ./<月の名前>/income_budget
 収入に関する予算
-## ./<月の名前>/spending_budget
+### ./<月の名前>/spending_budget
 支出に関する予算
-## ./<月の名前>/journal
+### ./<月の名前>/journal
 仕訳帳
-## ./<月の名前>/status
+### ./<月の名前>/status
 現状
