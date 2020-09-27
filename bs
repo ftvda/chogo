@@ -4,7 +4,8 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
 if [ $# == 0 ]; then
-	awk '{print $1,NR}' $assets $liabilities | sort | join - status | sort -n -k 2 | awk '{print $1,$3}' 
+	grep -e assets -e liabilities -e equity status
 elif [ $1 == -h ]; then
-	awk '{print $1,NR}' $assets $liabilities | sort | join - status | sort -n -k 2 | awk '{printf "%s %\047d\n",$1,$3}' | column -t
+	grep -e assets -e liabilities -e equity status |
+	awk '{printf "%s %\047d\n",$1,$2}' | column -t -R 2
 fi

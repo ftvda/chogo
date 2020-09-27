@@ -11,13 +11,13 @@ touch .tmp
 while :
 do
 	echo =======================
-	echo brought_forward | cat -n $account_name $assets $liabilities -
+	cat -n $accounts
 	read -p "account[e to exit]: " ac
 	if [ $ac = "e" ]; then break; fi
-	ac=$(echo brought_forward | cat $account_name $assets $liabilities - | sed -n ${ac}p)
+	ac=$(cat $account_name | sed -n ${ac}p)
 	read -p "ammount: " am
 	read -p "comment: " cm
-	echo -e "$id\t$d\t$ac\t$am\t$cm" >> .tmp
+	echo -e "$id $d $ac $am $cm" >> .tmp
 done
 
 echo =======================
