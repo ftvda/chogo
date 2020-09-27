@@ -6,33 +6,29 @@ personal accounting script
 .
 ├── .chogo
 ├── conf
-│   ├── account_name
-│   ├── assets
-│   └── liabilities
+│   └── accounts
 └── nagatsuki
-    ├── income_budget
+    ├── budget
     ├── journal
-    ├── spending_budget
     └── status
 ```
 ## ./.chogo
+設定用ファイル
 
 ## ./conf
 家計簿の項目を書いたファイル用のディレクトリ
-### ./conf/account_name
-現金の出入りの項目
-### ./conf/assets
-資産の項目
-###	./conf/liabilities
-負債の項目
+### ./conf/accounts
+項目を書いたファイル。
 
 ## ./<月の名前>
 各月毎の記録用ディレクトリ
-### ./<月の名前>/income_budget
-収入に関する予算
-### ./<月の名前>/spending_budget
-支出に関する予算
+### ./<月の名前>/budget
+予算
 ### ./<月の名前>/journal
 仕訳帳
 ### ./<月の名前>/status
-現状
+現状  
+```bash
+chogo st
+```
+で出力
