@@ -2,17 +2,17 @@
 personal accounting script
 
 # directory
-.
-├── .chogo
-├── conf
-│   ├── account_name
-│   ├── assets
-│   └── liabilities
-└── nagatsuki
-    ├── income_budget
-    ├── journal
-    ├── spending_budget
-    └── status
+.  
+├── .chogo  
+├── conf  
+│   ├── account_name  
+│   ├── assets  
+│   └── liabilities  
+└── nagatsuki  
+    ├── income_budget  
+    ├── journal  
+    ├── spending_budget  
+    └── status  
 
 ## ./.chogo
 
