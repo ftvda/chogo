@@ -1,0 +1,30 @@
+#!/bin/bash
+
+id=$(tail -n 1 journal | awk '{print $1+1}')
+today=$(date "+%Y-%m-%d")
+
+read -p "date[default $today]: " d
+if [ -z "$d" ]; then d=$today; fi
+
+if [ -f .tmp ]; then rm .tmp; fi
+touch .tmp
+while :
+do
+	echo =======================
+	echo brought_forward | cat -n $account_name $assets $liabilities -
+	read -p "account[e to exit]: " ac
+	if [ $ac = "e" ]; then break; fi
+	ac=$(echo brought_forward | cat $account_name $assets $liabilities - | sed -n ${ac}p)
+	read -p "ammount: " am
+	read -p "comment: " cm
+	echo -e "$id\t$d\t$ac\t$am\t$cm" >> .tmp
+done
+
+echo =======================
+cat .tmp
+echo =======================
+read -p "save? [y/N]: " ans
+case $ans in
+	[yY]) cat .tmp >> journal;;
+	*) rm .tmp && echo aborted;;
+esac
