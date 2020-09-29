@@ -8,6 +8,7 @@ case $1 in
 	bs)	$SD/bs ${@:2};;
 	st) $SD/st ${@:2};;
 	add) $SD/add ${@:2};;
+	bf) $SD/bf ${@:2};;
 	init) $SD/init ${@:2};;#TODO
 	
 	*) echo usage: $(basename $0) "[cf|bs|st|add|init]" >&2;;

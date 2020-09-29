@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 id=$(tail -n 1 journal | awk '{print $1+1}')
 today=$(date "+%Y-%m-%d")
@@ -14,7 +14,7 @@ do
 	cat -n $accounts
 	read -p "account[e to exit]: " ac
 	if [ $ac = "e" ]; then break; fi
-	ac=$(cat $account_name | sed -n ${ac}p)
+	ac=$(cat $accounts | sed -n ${ac}p)
 	read -p "ammount: " am
 	read -p "comment: " cm
 	echo -e "$id $d $ac $am $cm" >> .tmp
