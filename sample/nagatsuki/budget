@@ -1,0 +1,14 @@
+household:income:salary	-500000
+household:expenses:tax	50000
+household:expenses:personal_development 30000
+household:expenses:rent 100000
+household:expenses:utility 20000
+household:expenses:communication 5000
+household:expenses:food 50000
+household:expenses:luxury 20000
+household:expenses:expendable 20000
+household:expenses:tools 10000
+household:expenses:transportation 50000
+household:expenses:sociailizing 30000
+household:expenses:investment 50000
+household:expenses:saving 65000

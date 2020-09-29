@@ -1,0 +1,17 @@
+household:assets:deposit 435000
+household:equity:brought_forward -100000
+household:expenses:food 1000
+household:expenses:investment 50000
+household:expenses:rent 100000
+household:expenses:saving 65000
+household:expenses:tax 50000
+household:income:salary -500000
+household:liabilities:accounts_payable -101000
+investment:assets:deposit 1055000
+investment:assets:stock 10000000
+investment:equity:brought_forward -11000000
+investment:equity:dividend -5000
+investmentsaving:equity:household -50000
+saving:assets:deposit 1065000
+saving:equity:brought_forward -1000000
+saving:equity:household -65000
