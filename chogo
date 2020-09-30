@@ -1,7 +1,11 @@
 #!/bin/bash 
 
 SD=~/.local/src/chogo
-source ../.chogo
+export CG_DIR=..
+export CG_CONF=$CG_DIR/conf
+export accounts=$CG_CONF/accounts
+export assets=$CG_CONF/assets
+export liabilities=$CG_CONF/liabilities
 
 case $1 in
 	cf) $SD/cf ${@:2};;

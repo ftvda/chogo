@@ -4,7 +4,6 @@ personal accounting script
 # directory
 ```
 .
-├── .chogo
 ├── conf
 │   └── accounts
 └── nagatsuki
@@ -15,8 +14,6 @@ personal accounting script
 ## ./.chogo
 設定用ファイル
 
-## ./conf
-家計簿の項目を書いたファイル用のディレクトリ
 ### ./conf/accounts
 項目を書いたファイル。
 
@@ -32,3 +29,7 @@ personal accounting script
 chogo st
 ```
 で出力
+
+# 使い方
+conf/account に家計簿の項目を記入
+`<月の名前>/`に移動して

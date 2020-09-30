@@ -1,5 +1,0 @@
-export CG_DIR=$(cd $(dirname $0); pwd)/../src/chogo/sample
-export CG_CONF=$CG_DIR/conf
-export accounts=$CG_CONF/accounts
-export assets=$CG_CONF/assets
-export liabilities=$CG_CONF/liabilities

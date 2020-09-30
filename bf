@@ -1,4 +1,5 @@
 #!/bin/bash
+# close the month and make the journal of the next month
 
 cat status | grep -e assets -e liabilities | 
 awk -v d=$1 '{printf "%d %s %s %d\n%d %s %s %d\n", 

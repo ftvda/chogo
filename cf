@@ -1,4 +1,5 @@
 #!/bin/bash
+# cash flow
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 # budgetファイルの並びのまま出力したかった
