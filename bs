@@ -1,11 +1,11 @@
-#/bin/bash
+#!/bin/sh
 #create balance sheet
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
-if [ $# == 0 ]; then
+if [ $# = 0 ]; then
 	grep -e assets -e liabilities -e equity status
-elif [ $1 == -h ]; then
+elif [ $1 = -h ]; then
 	grep -e assets -e liabilities -e equity status |
 	awk '{printf "%s %\047d\n",$1,$2}' | column -t -R 2
 fi

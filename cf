@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # cash flow
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)

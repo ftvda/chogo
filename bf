@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/sh
 # close the month and make the journal of the next month
 
 [ -n "$1" ] && d=$1 || d=$(date "+%Y-%m-%d")
